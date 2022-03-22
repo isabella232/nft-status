@@ -1,0 +1,3 @@
+config.yaml merge = ours
+logo-192x192.png merge = ours
+wrangler.toml merge = ours
