@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: staging-api
-    name: workers.cloudflare.com
+    name: platform.staging.consensys-nft.com
     description: 'Staging NFT API'
     url: 'https://platform.staging.consensys-nft.com/api/v2/public/status'
     method: GET
