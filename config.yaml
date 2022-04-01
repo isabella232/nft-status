@@ -1,6 +1,6 @@
 settings:
   title: 'ConsenSys NFT Status'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.consensys-nft.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,6 +15,30 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: macvivaglamnft
+    name: macvivaglamnft.com
+    description: 'macvivaglamnft'
+    url: 'https://staging.macvivaglamnft.com/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+  - id: api
+    name: platform.consensys-nft.com
+    description: 'NFT API'
+    url: 'https://platform.consensys-nft.com/api/v2/public/status'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+  - id: staging-macvivaglamnft
+    name: staging.macvivaglamnft.com
+    description: 'Staging macvivaglamnft'
+    url: 'https://staging.macvivaglamnft.com/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
   - id: staging-api
     name: platform.staging.consensys-nft.com
     description: 'Staging NFT API'
