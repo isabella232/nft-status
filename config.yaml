@@ -18,7 +18,7 @@ monitors:
   - id: macvivaglamnft
     name: macvivaglamnft.com
     description: 'macvivaglamnft'
-    url: 'https://staging.macvivaglamnft.com/'
+    url: 'https://macvivaglamnft.com/'
     method: GET
     expectStatus: 200
     followRedirect: true
