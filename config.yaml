@@ -21,7 +21,7 @@ monitors:
     url: 'https://staging.macvivaglamnft.com/'
     method: GET
     expectStatus: 200
-    followRedirect: false
+    followRedirect: true
     linkable: false
   - id: api
     name: platform.consensys-nft.com
@@ -29,7 +29,7 @@ monitors:
     url: 'https://platform.consensys-nft.com/api/v2/public/status'
     method: GET
     expectStatus: 200
-    followRedirect: false
+    followRedirect: true
     linkable: false
   - id: staging-macvivaglamnft
     name: staging.macvivaglamnft.com
@@ -37,7 +37,7 @@ monitors:
     url: 'https://staging.macvivaglamnft.com/'
     method: GET
     expectStatus: 200
-    followRedirect: false
+    followRedirect: true
     linkable: false
   - id: staging-api
     name: platform.staging.consensys-nft.com
@@ -45,5 +45,5 @@ monitors:
     url: 'https://platform.staging.consensys-nft.com/api/v2/public/status'
     method: GET
     expectStatus: 200
-    followRedirect: false
+    followRedirect: true
     linkable: false
