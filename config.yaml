@@ -47,3 +47,4 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false
+
